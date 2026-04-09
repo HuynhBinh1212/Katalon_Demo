@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>menu_taomoiyeucau</name>
+   <tag></tag>
+   <elementGuidId>de9eae0e-3401-49f1-a79c-73e29567f9c1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='kt_aside_menu']/ul/li[2]/a/em</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>em.menu-icon.flaticon2-sheet</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>em</value>
+      <webElementGuid>18dd45c6-7646-4213-a99b-f20a6491cc4d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>menu-icon flaticon2-sheet</value>
+      <webElementGuid>4e0f7c6c-5859-4922-89a9-74239d8980b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;kt_aside_menu&quot;)/ul[@class=&quot;menu-nav&quot;]/li[@class=&quot;menu-item&quot;]/a[@class=&quot;menu-link&quot;]/em[@class=&quot;menu-icon flaticon2-sheet&quot;]</value>
+      <webElementGuid>e9de541b-fc0c-4f75-8612-4ccf726338c2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='kt_aside_menu']/ul/li[2]/a/em</value>
+      <webElementGuid>b05a33e7-ea95-411c-8baa-4cd95201642a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/em</value>
+      <webElementGuid>78cc51f4-6ac3-44a6-8ce0-45edd0181993</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h5_Chi tit yu cu</name>
+   <tag></tag>
+   <elementGuidId>ea13d364-7a15-4f6d-93d1-59aac01e7478</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//h5[@id='exampleModalLabel'])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.modal-dialog.modal-xl > div.modal-content > div.modal-header > #exampleModalLabel</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>fb07ce87-0945-418d-8542-37c047c98090</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>modal-title</value>
+      <webElementGuid>a684c4f1-627f-41d1-92f5-65606295ce3d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>exampleModalLabel</value>
+      <webElementGuid>fc04ed1e-b03e-4bb7-a778-122226248544</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Chi tiết yêu cầu</value>
+      <webElementGuid>9df8b08b-b912-4706-a07a-8b20f9dee538</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;exampleModal&quot;)/div[@class=&quot;modal-dialog modal-xl&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-header&quot;]/h5[@id=&quot;exampleModalLabel&quot;]</value>
+      <webElementGuid>41a9f433-7fd7-4777-9175-68b651dc6597</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//h5[@id='exampleModalLabel'])[2]</value>
+      <webElementGuid>c757b89e-a4ab-4ee0-aba6-f1d67f5a96aa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='exampleModal']/div/div/div/h5</value>
+      <webElementGuid>d7d5dfc4-3c84-4331-83bb-088935c2dda6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng xuất'])[1]/following::h5[1]</value>
+      <webElementGuid>3edf2b65-4fc4-460b-b1ba-ff83c35ab6b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='binhht@bvbank.net.vn'])[1]/following::h5[1]</value>
+      <webElementGuid>b8cfa40c-5d19-4dee-8d4a-1037637f16bc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Thêm quyền'])[1]/preceding::h5[1]</value>
+      <webElementGuid>6de90e5c-946d-4cd7-a914-209b96d8f65d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bỏ quyền'])[1]/preceding::h5[1]</value>
+      <webElementGuid>2eeb3eff-49fb-4ea7-994f-457a37be63db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Chi tiết yêu cầu']/parent::*</value>
+      <webElementGuid>3af1b2d5-f44c-4af6-b299-b25add927016</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//footer/div/div/div/div/h5</value>
+      <webElementGuid>26e01d99-96f7-4232-8e84-911f961d8a62</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h5[@id = 'exampleModalLabel' and (text() = ' Chi tiết yêu cầu' or . = ' Chi tiết yêu cầu')]</value>
+      <webElementGuid>d8f5f736-b986-4c22-86d2-177e4c7b13ca</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>menu_Danhsachyeucau</name>
+   <tag></tag>
+   <elementGuidId>9c80f61e-d6c0-47a3-b119-56a7a4105a44</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='kt_aside_menu']/ul/li[4]/a/em</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>em.menu-icon.flaticon2-crisp-icons</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>em</value>
+      <webElementGuid>3e121b1c-a239-4288-9adc-cb19c6027fbd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>menu-icon flaticon2-crisp-icons</value>
+      <webElementGuid>15f15a7f-af24-47ff-85fe-6bfd51f3eb00</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;kt_aside_menu&quot;)/ul[@class=&quot;menu-nav&quot;]/li[@class=&quot;menu-item&quot;]/a[@class=&quot;menu-link&quot;]/em[@class=&quot;menu-icon flaticon2-crisp-icons&quot;]</value>
+      <webElementGuid>f273f3e0-eed4-4ec9-bb52-df89067603dd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='kt_aside_menu']/ul/li[4]/a/em</value>
+      <webElementGuid>00f3c261-336b-4284-b962-2daeca63ba75</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[4]/a/em</value>
+      <webElementGuid>4c1ba01e-1b47-41a6-9057-1a5f5880d204</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

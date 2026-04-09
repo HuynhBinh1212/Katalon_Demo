@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>icon_Thaotac_chitiet</name>
+   <tag></tag>
+   <elementGuidId>76da3835-d8f8-4866-a51c-416de117642d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='btn-update']/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.far.fa-eye</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>95029fc6-086d-47f7-8072-914e873b90a0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>far fa-eye</value>
+      <webElementGuid>21de04c8-8192-4f67-bb36-0bc4a258e960</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;137342&quot;)/td[@class=&quot;text-center text-center text-nowrap&quot;]/a[@id=&quot;btn-update&quot;]/i[@class=&quot;far fa-eye&quot;]</value>
+      <webElementGuid>a39a3365-66c6-44cb-94db-f618868c88b9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='btn-update']/i</value>
+      <webElementGuid>1f5eff6b-4869-4618-974e-608670ad11fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/a/i</value>
+      <webElementGuid>a0eb3f2f-3f2c-48ab-8e04-6571a2ecf72d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

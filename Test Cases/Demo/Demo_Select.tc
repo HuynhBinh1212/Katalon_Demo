@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Demo_Select</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>781b8479-ca68-4485-8335-2ff4d070ba8d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bf3b4e76-94e0-4a2f-a10a-af8ced3b4add</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Verify gia tri select'</defaultValue>
+      <description></description>
+      <id>bf3b4e76-94e0-4a2f-a10a-af8ced3b4add</id>
+      <masked>false</masked>
+      <name>message</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>menu_Phieuluutam</name>
+   <tag></tag>
+   <elementGuidId>b9a4b313-ce45-4fd8-899d-ab46885197da</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='kt_aside_menu']/ul/li[3]/a/em</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>em.menu-icon.flaticon2-hourglass-1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>em</value>
+      <webElementGuid>18dfb141-26d1-4d33-82d8-c49d9fdb8a77</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>menu-icon flaticon2-hourglass-1</value>
+      <webElementGuid>a2c4c896-5338-43d5-b0b5-ed6e371a2fd2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;kt_aside_menu&quot;)/ul[@class=&quot;menu-nav&quot;]/li[@class=&quot;menu-item&quot;]/a[@class=&quot;menu-link&quot;]/em[@class=&quot;menu-icon flaticon2-hourglass-1&quot;]</value>
+      <webElementGuid>7f5bbceb-7f5a-4279-9013-b7c7b27d6c03</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='kt_aside_menu']/ul/li[3]/a/em</value>
+      <webElementGuid>34e463fc-d81a-4b94-9696-78a98482ebac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[3]/a/em</value>
+      <webElementGuid>ea1c31b1-5829-44a3-a6b2-e0f74fd11ef5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
