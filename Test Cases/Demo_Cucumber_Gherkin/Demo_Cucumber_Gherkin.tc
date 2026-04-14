@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Demo_Cucumber_Gherkin</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>81c6996e-4c3d-44d2-8eb6-5de966faa0cc</testCaseGuid>
+</TestCaseEntity>
