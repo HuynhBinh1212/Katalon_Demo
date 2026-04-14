@@ -4,5 +4,6 @@
    <name>LoginRunner</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8a3f36fc-8948-4f0f-a848-144093bf4213</testCaseGuid>
 </TestCaseEntity>

@@ -10,30 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>3f4e215a-b85b-42ce-9f1d-68aad5025c87</testSuiteGuid>
+   <testSuiteGuid>18ca8cc9-4874-4f87-8d40-70c669bfc53c</testSuiteGuid>
    <testCaseLink>
-      <guid>7aa44f06-788b-4207-835e-e3ec8fdf3a5c</guid>
+      <guid>98844093-b6b1-4095-a633-cdab13081208</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Common Test Cases/Login</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>19fe967b-1564-4705-aff2-848d45b84489</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>75fa3d79-7e92-4d55-b359-f7c9493ea288</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>602052eb-38e0-48f7-a2ef-fccf73ed57e8</variableId>
-      </variableLink>
+      <testCaseId>Test Cases/Demo_Cucumber_Gherkin/LoginRunner</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

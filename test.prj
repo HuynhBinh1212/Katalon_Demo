@@ -4,9 +4,12 @@
    <name>test</name>
    <tag></tag>
    <UUID>273391c7-3552-459b-af44-3b3c1f67b231</UUID>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>ENTERPRISE</modifiedEdition>
+   <modifiedVersion>11.1.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>D:\Binhht\Katalon Studio\IT_SERVICES\test.prj</projectFileLocation>
+   <projectFileLocation>F:\Katalon_Demo\test.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

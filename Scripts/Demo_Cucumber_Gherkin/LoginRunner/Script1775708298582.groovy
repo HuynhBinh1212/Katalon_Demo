@@ -1,3 +1,5 @@
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -17,5 +19,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runFeatureFile('Include/features/Login_Demo.feature')
+
+//Khai báo plugin sử dụng đường dẫn package của class bạn vừa tạo
+String[] plugins = ["utils.CucumberUtils"]
+
+CucumberKW.runFeatureFileWithTags('Include/features/Login_Demo.feature', "", plugins)
 

@@ -19,7 +19,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable
-
+import io.cucumber.java.en.Given
+import io.cucumber.java.en.Then
+import io.cucumber.java.en.When
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.By
@@ -36,34 +38,26 @@ import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
-
-import cucumber.api.java.en.And
-import cucumber.api.java.en.Given
-import cucumber.api.java.en.Then
-import cucumber.api.java.en.When
-
-
+import extentReport.ExtentReportManager as ExtentReportManager
 
 class Login_Demo_Step {
+	
+
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@Given("User navigate URL")
-	def UsernavigateURL() {
+	
+	@When("User log with user and pass")
+	public void userLogWithUserAndPass() {
 		
-		WebUI.openBrowser('')
+		WebUI.delay(2)
 		
-		WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+		WebUI.click(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/a_Login'))
+		
+		WebUI.click(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/input_Demo account_form-control'))
+		
+		WebUI.setText(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/input_Username_username'), 'John Doe')
 		
 	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
-	}
-
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
-	}
 }

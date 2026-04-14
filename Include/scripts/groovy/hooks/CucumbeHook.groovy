@@ -1,83 +1,79 @@
 package hooks
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testcase.TestCase
-import com.kms.katalon.core.testdata.TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import cucumber.api.java.After
-import cucumber.api.java.Before
-import cucumber.api.Scenario
-import internal.GlobalVariable
-
-import cucumber.api.java.AfterStep
-import extentReport.ExtentReportManager as ExtentReportManager
+import extentReport.ExtentReportManager
+import io.cucumber.java.After
+import io.cucumber.java.AfterStep
+import io.cucumber.java.Before
+import io.cucumber.java.BeforeStep
+import io.cucumber.java.Scenario
 import com.aventstack.extentreports.Status
+import utils.CucumberUtils as CucumberUtils
+import utils.ScenarioContext as ScenarioContext
+
 
 public class CucumbeHook {
-
+//Chạy khi chạy cucumber có kịch bản 
 	@Before
-	def beforeScenario(Scenario scenario) {
+	void beforeScenario(Scenario scenario) {
+		// Reset context trước khi bắt đầu scenario mới
+		
 		// Khởi tạo Scenario trong Extent Report
-		ExtentReportManager.initReport()
+	
+		//ExtentReportManager.initReport()
 		ExtentReportManager.createScenario(scenario.getName())
+		
 		ExtentReportManager.logStep(Status.INFO, "Start scenario: " + scenario.getName())
 	}
 
+	@BeforeStep
+	void beforeStep(Scenario scenario) {
+		
+		
+	}
+	
 	@AfterStep
-	def afterStep(Scenario scenario) {
-		String keyword = utils.CucumberUtils.currentStepKeyword
-		String name = utils.CucumberUtils.currentStepName
+	void afterStep(Scenario scenario) {
+		String keyword = CucumberUtils.currentStepKeyword
+		String stepName = CucumberUtils.currentStepName
 		
-		String fullStepName = keyword + name
-		
-		// Lấy tên của Step vừa chạy (Katalon 8.6.9 hỗ trợ lấy qua reflection hoặc nội dung kịch bản)
+		String fullStepName = keyword+" : "+ stepName
 
+		println(fullStepName)
+		
 		String status = scenario.getStatus().toString().toUpperCase()
 
 		switch (status) {
 			case "PASSED":
-				ExtentReportManager.logStep(Status.PASS, "BƯỚC: " + stepName)
+				ExtentReportManager.logStep(Status.PASS, fullStepName)
 				break
 
 			case "FAILED":
 				String screenshotPath = WebUI.takeScreenshot()
-				ExtentReportManager.logStep(Status.FAIL, "LỖI TẠI: " + stepName, screenshotPath)
+				ExtentReportManager.logStep(Status.FAIL, "LỖI TẠI: " + fullStepName, screenshotPath)
 				break
 
 			case "SKIPPED":
-			// Ghi nhận các bước bị bỏ qua để báo cáo không bị "mất dấu"
-				ExtentReportManager.logStep(Status.SKIP, "BỎ QUA: " + stepName)
+			//
+				ExtentReportManager.logStep(Status.SKIP, fullStepName)
 				break
 
 			default:
-				ExtentReportManager.logStep(Status.INFO, "TRẠNG THÁI KHÁC: " + stepName)
+				ExtentReportManager.logStep(Status.INFO, fullStepName)
 				break
 		}
-
-
 	}
 
 	@After
-	def afterScenario(Scenario scenario) {
+	void afterScenario(Scenario scenario) {
+		
 		ExtentReportManager.logStep(Status.INFO, "End scenario: " + scenario.getStatus())
-		// WebUI.closeBrowser()
-		// Đừng gọi Log.flush() ở đây nếu bạn chạy nhiều Scenario trong 1 Suite
-
+		
+		// Giải phóng bộ nhớ sau khi xong
+		
 		ExtentReportManager.flush()
+		 ScenarioContext.clear();
+		 
 	}
 }
 
