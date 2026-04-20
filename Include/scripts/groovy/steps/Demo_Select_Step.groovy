@@ -41,28 +41,16 @@ import io.cucumber.java.en.And
 import io.cucumber.java.en.Given
 import io.cucumber.java.en.Then
 import io.cucumber.java.en.When
-
+import helper.WebUIandLog as WebUIandLog
 
 
 class Demo_Select_Step {
 
 	@When("Người dùng bấm select")
+	
 	public void ngườiDùngBấmSelect() {
-		WebUI.click(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/input_Demo account_form-control'))
 		
-		WebUI.setText(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/input_Username_username'), 'John Doe')
-		
-		WebUI.click(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/span_Demo account_glyphicon glyphicon-lock'))
-		
-		WebUI.setEncryptedText(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/input_Password_password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
-		
-		WebUI.click(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/button_Login'))
-		
-		WebUI.click(findTestObject('Login_Demo/Page_Demo_Select/select_Facility'))
-		
-		WebUI.selectOptionByValue(findTestObject('Object Repository/Login_Demo/Page_Demo_Select/select_Facility'), 'Tokyo CURA Healthcare Center',
-			false)
-		
+	
 	
 	}
 

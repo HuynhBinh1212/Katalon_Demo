@@ -17,16 +17,15 @@
 # # (Comments)
 # Sample Feature Definition Template
 # Language: vi
-@tag
 Feature: Login
 
-  @tag1
+  @success
   Scenario: User login page success
-    Given Người dùng đăng ký
+    Given Người dùng đi đến URL
     When User log with user and pass
+    Then verify
 
- @tag2
+  @fail
   Scenario: User login page fail
-    Given Người dùng đăng ký
+    Given Người dùng đi đến URL
     When User log with user and pass
-    

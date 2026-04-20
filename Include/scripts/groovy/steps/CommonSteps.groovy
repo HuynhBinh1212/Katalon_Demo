@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import com.aventstack.extentreports.reporter.ExtentReporter
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
@@ -42,19 +43,23 @@ import io.cucumber.java.en.Given
 import io.cucumber.java.en.Then
 import io.cucumber.java.en.When
 import helper.WebUIandLog as WebUIandLog
-
+import extentReport.ExtentReportManager as ExtentReportManager
 
 class CommonSteps {
-	@Given("Người dùng đăng ký")
-	def UsernavigateURL() {
-
-		WebUI.openBrowser('')
+	@Given("Người dùng đi đến URL")
+	public void UsernavigateURL() {
+			
+		WebUIandLog.setNode("Người dùng đi đến URL")
 		
-		WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+		//WebUI.openBrowser('')
 		
-		WebUIandLog.clickAndLog(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/a_Login'),"Click button")
+		WebUIandLog.navigateWithReport('https://katalon-demo-cura.herokuapp.com/')
+		
+		WebUIandLog.clickWithReport(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/a_CURA Healthcare_menu-toggle'),"Toggle")
+		
+		WebUIandLog.clickWithReport(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/a_Login'),"Login")
 		
 	}
-	
- 
+
+
 }

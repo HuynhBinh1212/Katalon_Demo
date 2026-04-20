@@ -39,9 +39,17 @@ import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import extentReport.ExtentReportManager as ExtentReportManager
+import helper.WebUIandLog as WebUIandLog
+
 
 class Login_Demo_Step {
 	
+
+	@Then("verify")
+	public void verify() {
+		WebUIandLog.setNode("Verify giá trị")
+		
+	}
 
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
@@ -50,13 +58,17 @@ class Login_Demo_Step {
 	@When("User log with user and pass")
 	public void userLogWithUserAndPass() {
 		
-		WebUI.delay(2)
+		WebUIandLog.setNode("When user login with user and pass")
 		
-		WebUI.click(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/a_Login'))
+		WebUIandLog.clickWithReport(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/input_Demo account_form-control'),"Account")
 		
-		WebUI.click(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/input_Demo account_form-control'))
+		WebUIandLog.sendKeysWithReport(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/input_Username_username'), 'John Doe','Account')
 		
-		WebUI.setText(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/input_Username_username'), 'John Doe')
+		WebUIandLog.clickWithReport(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/span_Demo account_glyphicon glyphicon-lock'),"Password")
+		
+		WebUIandLog.setEncryptedTextWithReport(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/input_Password_password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM', 'Password')
+		
+		WebUIandLog.clickWithReport(findTestObject('Object Repository/Login_Demo/Page_Dashboard_Login/button_Login'),"Login")
 		
 	}
 
