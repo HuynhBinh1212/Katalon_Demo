@@ -38,7 +38,7 @@ class NewTestListener {
 	@AfterTestSuite
 	def afterTestSuite(TestSuiteContext testSuiteContext) {
 		// Lệnh QUAN TRỌNG NHẤT: Xuất dữ liệu ra file vật lý
-		ExtentReport.flush()
+	
 		ExtentReport.unload()
 	}
 }

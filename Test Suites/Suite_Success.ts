@@ -12,10 +12,10 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>c23484cb-fa17-49dd-a342-fd5d2c750f2d</testSuiteGuid>
    <testCaseLink>
-      <guid>73b5c25a-7dcc-48e5-810f-6e4a079eed10</guid>
+      <guid>8c40370e-4728-48c9-a278-74b753cd71e4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Demo_Cucumber_Gherkin/TestCaseSuccess</testCaseId>
+      <testCaseId>Test Cases/Demo/Demo_Search_RLOS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

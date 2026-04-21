@@ -4,5 +4,6 @@
    <name>Demo_Calendar</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>c360f918-cd05-460d-be0c-5fc81c71d9ce</testCaseGuid>
 </TestCaseEntity>

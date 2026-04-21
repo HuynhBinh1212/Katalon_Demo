@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Common test case used to login. 
-Steps:
-- Click on 'Book Appointment' button to login
-- Input username and password
-- Click on 'Login' button
-
-Expected result:
+   <description>Common test case used to login. &#xd;
+Steps:&#xd;
+- Click on 'Book Appointment' button to login&#xd;
+- Input username and password&#xd;
+- Click on 'Login' button&#xd;
+&#xd;
+Expected result:&#xd;
 'Appointment' section is displayed after successful login</description>
    <name>Login</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>dc59940a-fb78-4da3-82c6-7ff4bffcfd97</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

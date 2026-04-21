@@ -58,7 +58,7 @@ public class CucumbeHook {
 			Markup messageSuccess = MarkupHelper.createLabel("Kết quả: " + scenario.getStatus().name(), ExtentColor.BLUE)
 			ExtentReportManager.logInfo(messageSuccess)
 		}
-		
+		ExtentReportManager.flush()
 		ExtentReportManager.unload()
 	}
 }

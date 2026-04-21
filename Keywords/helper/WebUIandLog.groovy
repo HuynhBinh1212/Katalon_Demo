@@ -86,4 +86,25 @@ public class WebUIandLog {
 			throw e
 		}
 	}
+	
+	//Action select
+	public static void selectAndLog(TestObject to, String label) {
+		try {
+			WebUI.selectOptionByLabel(to, label, false)
+			
+			// Ghi log thành công vào Extent Report (Giả sử bạn đã khởi tạo ExtentTest trong GlobalVariable)
+			ExtentReport.logStatus(Status.INFO, "<b>Hành động:</b> Chọn giá trị [ " + label + " ] từ dropdown")
+			
+		} catch (Exception e) {
+			ExtentReport.logStatus(Status.FAIL, "<b>Lỗi:</b> Không thể chọn giá trị [ " + label + " ]")
+			throw e
+		}
+	}
+	
+	//Action Radio
+	//CheckList
+	
+	//Verify Text
+	
+	
 }

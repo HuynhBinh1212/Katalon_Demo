@@ -61,5 +61,41 @@ class CommonSteps {
 		
 	}
 
+	@Given("Người dùng đi đến URL RLOS")
+	public void ngườiDùngĐiĐếnURLRLOS() {
+	
+		WebUIandLog.navigateWithReport("http://172.27.5.5:31523/")
+		
+	}
 
+	@When("Nhập username")
+	public void nhậpUsername() {
+		
+		WebUIandLog.sendKeysWithReport(findTestObject('Object Repository/RLOS/Page_Log in to App Portal/input_Username or email_username'), 'namnp', "Username")
+		
+	}
+
+	@When("Bấm nút Login")
+	public void bấmNútLogin() {
+		WebUI.click(findTestObject('Object Repository/RLOS/Page_Log in to App Portal/input_Password_kc-login'))
+	}
+
+	@When("Nhập password")
+	public void nhậpPassword() {
+		WebUI.setEncryptedText(findTestObject('Object Repository/RLOS/Page_Log in to App Portal/input_Password_password'), 'Uvyjv8f4jBwgsuBcD5HE0Q==')
+		WebUI.maximizeWindow()
+	}
+
+	@Then("Verify kết quả")
+	public void verifyKếtQuả() {
+		WebUI.delay(5)
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }

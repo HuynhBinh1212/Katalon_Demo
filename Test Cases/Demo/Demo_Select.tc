@@ -4,6 +4,7 @@
    <name>Demo_Select</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>781b8479-ca68-4485-8335-2ff4d070ba8d</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

@@ -23,6 +23,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
+
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.G_SiteURL)
